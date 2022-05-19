@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { RiEyeLine, RiEyeOffLine } from 'react-icons/ri';
-import { IconButton } from '../../../../../shared/components/IconButton/icon-button';
+import { IconButton } from '@/shared/components/icon-button/icon-button';
 
 import * as S from './styled';
 
