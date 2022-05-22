@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
 import * as React from 'react';
 
-import { Box } from '@/shared/components/box';
-import { Typography } from '@/shared/components/Typography';
-import { Button } from '@/shared/components/Button';
+import { Box } from '@/shared/components/box-container';
+import { Typography } from '@/shared/components/typography';
+import { Button } from '@/shared/components/button';
 import { Media } from '../../features/food/components/login/media';
 import { MediaCard } from '@/features/food/components/login/media-card';
 import { Content } from '../../features/food/components/login/content';

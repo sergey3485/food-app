@@ -1,11 +1,11 @@
 import type { NextPage } from 'next';
 
-import { Box } from '@/shared/components/box';
-import { Typography } from '@/shared/components/Typography';
+import { Box } from '@/shared/components/box-container';
+import { Typography } from '@/shared/components/typography';
 import { Media } from '../../features/food/components/login/media';
 import { Content } from '../../features/food/components/login/content';
 import { FormaInput } from '@/features/food/components/login/forma-input';
-import { Button } from '@/shared/components/Button';
+import { Button } from '@/shared/components/button';
 
 const Home: NextPage = () => {
   return (

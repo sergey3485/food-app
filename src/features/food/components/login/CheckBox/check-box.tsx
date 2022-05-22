@@ -3,7 +3,7 @@ import { RiCheckLine } from 'react-icons/ri';
 import { Box } from '@/shared/components/box';
 
 import * as S from './styled';
-import { Typography } from '@/shared/components/Typography';
+import { Typography } from '@/shared/components/typography';
 
 export interface CheckboxProps {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;

@@ -3,7 +3,7 @@ import * as React from 'react';
 import { RiStarFill } from 'react-icons/ri';
 
 import { Box } from '@/shared/components/box';
-import { Typography } from '@/shared/components/Typography';
+import { Typography } from '@/shared/components/typography';
 
 import * as S from './styled';
 
