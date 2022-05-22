@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { RiThumbUpFill, RiThumbDownLine, RiStarFill } from 'react-icons/ri';
 
-import { Box } from '@/shared/components/Box';
+import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/Typography';
 
 import { reviewsUsers, User } from '../constants/users';

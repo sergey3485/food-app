@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 
-import { Box } from '@/shared/components/Box';
+import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/Typography';
 import { Media } from '../../features/food/components/login/media';
 import { Content } from '../../features/food/components/login/content';

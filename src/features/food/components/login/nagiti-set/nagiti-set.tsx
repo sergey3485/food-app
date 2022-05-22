@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { RiAddLine, RiSubtractFill } from 'react-icons/ri';
 
-import { Box } from '@/shared/components/Box';
+import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/Typography';
 
 import { MediaCard } from '../media-card';
