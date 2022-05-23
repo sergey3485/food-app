@@ -1,10 +1,5 @@
 import styled from '@emotion/styled';
 
-import {
-  color,
-  ColorProps,
-} from 'styled-system';
-
 const variants: Record<string, React.CSSProperties> = {
   cost: {
     fontWeight: 800,
@@ -49,33 +44,3 @@ export const TypographyRoot = styled.div((props: TypographyProps) => ({
   ...variants[props.variant],
   color: props.color,
 }));
-
-export const TitleForma = styled.h1({
-  fontWeight: 700,
-  fontSize: '60px',
-  lineHeight: '82px',
-  letterSpacing: '0.1px',
-  color: '#2B2B43',
-});
-
-export const TitleNagiri = styled.span({
-  fontWeight: 700,
-  fontSize: '18px',
-  lineHeight: 1,
-  letterSpacing: '0.1px',
-});
-
-export const DescriptionNagiri = styled.span({
-  fontWeight: 400,
-  fontSize: '12px',
-  lineHeight: 1,
-  letterSpacing: '0.2px',
-  color: '#83859C',
-});
-
-export const Title = styled.span({
-  fontWeight: 700,
-  fontSize: '18px',
-  lineHeight: 1,
-  letterSpacing: '0.1px',
-});

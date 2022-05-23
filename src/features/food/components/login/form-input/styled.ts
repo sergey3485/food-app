@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const FormaInputRoot = styled.div({
+export const FormInputRoot = styled.div({
   display: 'flex',
   flexDirection: 'column',
   width: '100%',

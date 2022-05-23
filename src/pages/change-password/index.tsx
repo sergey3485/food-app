@@ -7,7 +7,7 @@ import { Button } from '@/shared/components/button';
 import { Media } from '../../features/food/components/login/media';
 import { MediaCard } from '@/features/food/components/login/media-card';
 import { Content } from '../../features/food/components/login/content';
-import { FormaInput } from '@/features/food/components/login/forma-input';
+import { FormInput } from '@/features/food/components/login/form-input';
 
 const Home: NextPage = () => {
   const [isSended, setIsSended] = React.useState(false);
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
             position="relative"
           >
             <form>
-              <FormaInput label="Email" />
+              <FormInput label="Email" />
 
               <Button onClick={sendLetter}>
                 Send a letter

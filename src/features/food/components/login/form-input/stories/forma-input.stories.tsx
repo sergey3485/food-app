@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { FormaInput, FormaInputProps } from '../forma-input';
+import { FormInput, FormaInputProps } from '../form-input';
 
 export default {
   title: 'features/food/components/FormaInput',
-  component: FormaInput,
+  component: FormInput,
 } as Meta;
 
-const Template: Story<FormaInputProps> = (args) => <FormaInput {...args} />;
+const Template: Story<FormaInputProps> = (args) => <FormInput {...args} />;
 
 export const Email = Template.bind({});
 

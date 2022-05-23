@@ -4,16 +4,9 @@ import { Box } from '@/shared/components/box-container';
 import { Typography } from '@/shared/components/typography';
 import { CheckBox } from '../checkbox';
 
-import { FormaInput } from '../forma-input';
+import { FormInput } from '../form-input';
 
 import * as S from './styled';
-
-// export interface LoginFormaProps {
-//   /**
-//    * The content
-//    */
-//   children: React.ReactNode;
-// }
 
 export const LoginForma = (): JSX.Element => {
   const errorExample = 'Use more then 8 sumbol in password';
@@ -48,14 +41,14 @@ export const LoginForma = (): JSX.Element => {
           width="100%"
           marginTop="32px"
         >
-          <FormaInput label="Email" placeholder="name@example.com" />
+          <FormInput label="Email" placeholder="name@example.com" />
         </Box>
 
         <Box
           width="100%"
           marginTop="28px"
         >
-          <FormaInput label="Password" placeholder="min. 8 characters" error={errorExample} />
+          <FormInput label="Password" placeholder="min. 8 characters" error={errorExample} />
         </Box>
 
         <Box

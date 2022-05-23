@@ -28,7 +28,7 @@ export interface FormaInputProps extends React.HTMLAttributes<HTMLInputElement> 
   type?: string;
 }
 
-export const FormaInput = (props: FormaInputProps): JSX.Element => {
+export const FormInput = (props: FormaInputProps): JSX.Element => {
   const {
     label,
     error,
@@ -41,7 +41,7 @@ export const FormaInput = (props: FormaInputProps): JSX.Element => {
   const baseType = type ?? (!visible ? inputType : 'password');
 
   return (
-    <S.FormaInputRoot>
+    <S.FormInputRoot>
       <S.Label>{label}</S.Label>
 
       <S.InputWrapper>
@@ -55,6 +55,6 @@ export const FormaInput = (props: FormaInputProps): JSX.Element => {
 
       {error && <S.ErrorText>{error}</S.ErrorText>}
 
-    </S.FormaInputRoot>
+    </S.FormInputRoot>
   );
 };

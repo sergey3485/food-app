@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { LoginForma } from '../login-forma';
+import { LoginForma } from '../login-form';
 
 export default {
   title: 'features/food/components/LoginForma',

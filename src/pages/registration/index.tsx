@@ -4,7 +4,7 @@ import { Box } from '@/shared/components/box-container';
 import { Typography } from '@/shared/components/typography';
 import { Media } from '../../features/food/components/login/media';
 import { Content } from '../../features/food/components/login/content';
-import { FormaInput } from '@/features/food/components/login/forma-input';
+import { FormInput } from '@/features/food/components/login/form-input';
 import { Button } from '@/shared/components/button';
 
 const Home: NextPage = () => {
@@ -53,18 +53,18 @@ const Home: NextPage = () => {
             position="relative"
           >
             <form>
-              <FormaInput label="Email" placeholder="name@example.com" />
+              <FormInput label="Email" placeholder="name@example.com" />
 
               <Box
                 marginTop={28}
               >
-                <FormaInput label="Password" />
+                <FormInput label="Password" />
               </Box>
 
               <Box
                 marginTop={28}
               >
-                <FormaInput label="Repeat Password" type="password" />
+                <FormInput label="Repeat Password" type="password" />
               </Box>
 
               <Button>
