@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { Box } from '@/shared/components/box-container';
+import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/typography';
 import { CheckBox } from '../checkbox';
 

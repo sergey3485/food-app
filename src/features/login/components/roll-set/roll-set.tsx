@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { RiAddLine } from 'react-icons/ri';
 
-import { Box } from '@/shared/components/box-container';
+import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/typography';
 
 import { MediaCard } from '../media-card';

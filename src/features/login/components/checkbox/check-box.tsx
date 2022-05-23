@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { RiCheckLine } from 'react-icons/ri';
-import { Box } from '@/shared/components/box-container';
+import { Box } from '@/shared/components/box';
 
 import * as S from './styled';
 import { Typography } from '@/shared/components/typography';
