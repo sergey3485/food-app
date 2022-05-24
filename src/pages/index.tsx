@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
 
 import { Media } from '../features/login/components/media';
-import { LoginForma } from '../features/login/components/login-form';
+import { LoginForm } from '../features/login/components/login-form';
 import { Content } from '../features/login/components/content';
 
 const Home: NextPage = () => {
   return (
     <Content>
-      <LoginForma />
+      <LoginForm />
       <Media>
         <div />
       </Media>

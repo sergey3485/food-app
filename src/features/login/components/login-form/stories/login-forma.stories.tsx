@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { LoginForma } from '../login-form';
+import { LoginForm } from '../login-form';
 
 export default {
   title: 'features/food/components/LoginForma',
-  component: LoginForma,
+  component: LoginForm,
 } as Meta;
 
-const Template: Story = (args) => <LoginForma {...args} />;
+const Template: Story = (args) => <LoginForm {...args} />;
 
 export const Basic = Template.bind({});
 

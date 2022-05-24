@@ -8,10 +8,10 @@ import { FormInput } from '../form-input';
 
 import * as S from './styled';
 
-export const LoginForma = (): JSX.Element => {
+export const LoginForm = (): JSX.Element => {
   const errorExample = 'Use more then 8 sumbol in password';
   return (
-    <S.LoginFormaRoot>
+    <S.LoginFormRoot>
       <Box
         display="flex"
         flexDirection="column"
@@ -78,6 +78,6 @@ export const LoginForma = (): JSX.Element => {
           </Link>
         </S.Footer>
       </Box>
-    </S.LoginFormaRoot>
+    </S.LoginFormRoot>
   );
 };

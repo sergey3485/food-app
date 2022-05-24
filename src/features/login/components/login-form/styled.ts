@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const LoginFormaRoot = styled.div({
+export const LoginFormRoot = styled.form({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',

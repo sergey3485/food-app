@@ -13,7 +13,7 @@ export const Eye = (props: EyeProps) => {
   const { visible, onClick } = props;
 
   return (
-    <IconButton style={{ fontSize: 24 }} onClick={onClick}>
+    <IconButton type="button" style={{ fontSize: 24 }} onClick={onClick}>
       {!visible ? <RiEyeLine color="#C7C8D2" /> : <RiEyeOffLine color="#C7C8D2" />}
     </IconButton>
   );
@@ -39,7 +39,6 @@ export const FormInput = (props: FormaInputProps): JSX.Element => {
   const [visible, setIsVisible] = React.useState(false);
   const inputType = label === 'Email' ? 'email' : 'text';
   const baseType = type ?? (!visible ? inputType : 'password');
-
   return (
     <S.FormInputRoot>
       <S.Label>{label}</S.Label>
