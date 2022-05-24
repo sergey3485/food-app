@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Link from 'next/link';
 
 import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/typography';
@@ -72,6 +73,25 @@ const Home: NextPage = () => {
               </Button>
             </form>
           </Box>
+        </Box>
+        <Box
+          component="footer"
+          display="flex"
+          alignItems="flex-start"
+          justifyContent="center"
+          width="100%"
+          position="absolute"
+          bottom="5%"
+          left={0}
+          color="#545563"
+        >
+          <Typography component="span">Already have an account?</Typography>
+
+          <Link passHref href="/">
+            <Typography component="span" color="#4E60FF">
+              Sign in
+            </Typography>
+          </Link>
         </Box>
       </Box>
       <Media>
