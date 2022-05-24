@@ -3,8 +3,9 @@ import Link from 'next/link';
 
 import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/typography';
-import { Media } from '../../features/login/components/media';
-import { Content } from '../../features/login/components/content';
+import { Footer } from '@/features/login/components/footer';
+import { Media } from '@/features/login/components/media';
+import { Content } from '@/features/login/components/content';
 import { FormInput } from '@/features/login/components/form-input';
 import { Button } from '@/shared/components/button';
 
@@ -74,25 +75,11 @@ const Home: NextPage = () => {
             </form>
           </Box>
         </Box>
-        <Box
-          component="footer"
-          display="flex"
-          alignItems="flex-start"
-          justifyContent="center"
-          width="100%"
-          position="absolute"
-          bottom="5%"
-          left={0}
-          color="#545563"
-        >
-          <Typography component="span">Already have an account?</Typography>
-
-          <Link passHref href="/">
-            <Typography component="span" color="#4E60FF">
-              Sign in
-            </Typography>
-          </Link>
-        </Box>
+        <Footer
+          description="Already have an account?"
+          href="/"
+          anchor="Sign in"
+        />
       </Box>
       <Media>
         <div />

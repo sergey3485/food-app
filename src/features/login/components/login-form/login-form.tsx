@@ -5,6 +5,7 @@ import { Typography } from '@/shared/components/typography';
 import { CheckBox } from '../checkbox';
 
 import { FormInput } from '../form-input';
+import { Footer } from '../footer';
 
 import * as S from './styled';
 
@@ -67,16 +68,11 @@ export const LoginForm = (): JSX.Element => {
             Forgot password ?
           </S.RememberPassowrd>
         </Link>
-
-        <S.Footer>
-          Don’t have an account?
-
-          <Link passHref href="/registration">
-            <S.CreateAccountLink>
-              Sign up
-            </S.CreateAccountLink>
-          </Link>
-        </S.Footer>
+        <Footer
+          description="Don’t have an account?"
+          href="/registration"
+          anchor="Sign up"
+        />
       </Box>
     </S.LoginFormRoot>
   );

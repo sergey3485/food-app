@@ -4,9 +4,10 @@ import * as React from 'react';
 import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/typography';
 import { Button } from '@/shared/components/button';
-import { Media } from '../../features/login/components/media';
+import { Media } from '@/features/login/components/media';
 import { MediaCard } from '@/features/login/components/media-card';
-import { Content } from '../../features/login/components/content';
+import { Content } from '@/features/login/components/content';
+import { Footer } from '@/features/login/components/footer';
 import { FormInput } from '@/features/login/components/form-input';
 
 const Home: NextPage = () => {
@@ -90,6 +91,11 @@ const Home: NextPage = () => {
             )}
           </Box>
         </Box>
+        <Footer
+          description="Remembered the password?"
+          href="/"
+          anchor="Sign in"
+        />
       </Box>
       <Media>
         <div />

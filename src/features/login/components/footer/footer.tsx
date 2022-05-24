@@ -23,11 +23,13 @@ export const Footer = (props: FooterProps): JSX.Element => {
 
   return (
     <S.FooterRoot>
-      <Typography component="span">{description}</Typography>
+      <Typography component="span" color="#545563">{description}</Typography>
 
       <Link passHref href={href}>
         <S.Anchor>
-          {anchor}
+          <Typography component="span" color="#4E60FF">
+            {anchor}
+          </Typography>
         </S.Anchor>
       </Link>
     </S.FooterRoot>

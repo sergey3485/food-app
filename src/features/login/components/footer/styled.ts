@@ -12,8 +12,9 @@ export const FooterRoot = styled.footer({
 });
 
 export const Anchor = styled.a({
-  color: '#4E60FF',
+  display: 'flex',
+  alignItems: 'center',
   textDecoration: 'none',
   marginLeft: '2px',
-  corsor: 'pointer',
+  cursor: 'pointer',
 });
