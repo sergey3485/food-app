@@ -1,20 +1,10 @@
 import * as React from 'react';
 import { RiArrowDownSLine } from 'react-icons/ri';
 import { Box } from '@/shared/components/box';
-import { Typography } from '@/shared/components/typography';
-
-import { MediaCard } from '../media-card';
 import { ReviewsHeader } from '../reviews-header';
 import { UsersReview } from '../users-review';
 
 import * as S from './styled';
-
-// export interface ReviewsProps {
-//   /**
-//    * The content
-//    */
-
-// }
 
 export const Reviews = (): JSX.Element => {
   return (

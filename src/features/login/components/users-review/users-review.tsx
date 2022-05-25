@@ -3,7 +3,6 @@ import * as React from 'react';
 import { RiThumbUpFill, RiThumbDownLine, RiStarFill } from 'react-icons/ri';
 
 import { Box } from '@/shared/components/box';
-import { Typography } from '@/shared/components/typography';
 
 import { reviewsUsers, User } from '../constants/users';
 
@@ -42,8 +41,9 @@ export const UserReview = (props: User) => {
           justifyContent="center"
           marginTop="4px"
         >
-          {arr.map((data) => (
-            <RiStarFill size={14} color={data <= rating ? '#4E60FF' : '#C7C8D2'} />
+          {arr.map((data, index) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <RiStarFill key={index} size={14} color={data <= rating ? '#4E60FF' : '#C7C8D2'} />
           ))}
           <S.CreatedAt>{time}</S.CreatedAt>
         </Box>
@@ -73,8 +73,10 @@ export const UserReview = (props: User) => {
 export const UsersReview = (): JSX.Element => {
   return (
     <S.UsersReviewRoot>
-      {reviewsUsers.map((user) => (
+      {reviewsUsers.map((user, index) => (
         <UserReview
+          // eslint-disable-next-line react/no-array-index-key
+          key={index}
           name={user.name}
           likes={user.likes}
           dislikes={user.dislikes}

@@ -10,9 +10,28 @@ import { Footer } from '../footer';
 import * as S from './styled';
 
 export const LoginForm = (): JSX.Element => {
-  const errorExample = 'Use more then 8 sumbol in password';
+  const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
+  const [emailError, setEmailError] = React.useState('');
+
+  const changeEmail = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newText = event.currentTarget.value;
+    setEmail(newText);
+
+    const condition = (newText.includes('@')) && (newText.includes('.'));
+    if (!condition) (setEmailError('Uncorrect email adress'));
+    else (setEmailError(''));
+  };
+
+  const changePassword = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newText = event.currentTarget.value;
+    setPassword(newText);
+  };
+
+  const onSubmit = () => {};
+
   return (
-    <S.LoginFormRoot>
+    <S.LoginFormRoot onSubmit={onSubmit}>
       <Box
         display="flex"
         flexDirection="column"
@@ -42,14 +61,25 @@ export const LoginForm = (): JSX.Element => {
           width="100%"
           marginTop="32px"
         >
-          <FormInput label="Email" placeholder="name@example.com" />
+          <FormInput
+            label="Email"
+            placeholder="name@example.com"
+            value={email}
+            onChange={changeEmail}
+            error={emailError}
+          />
         </Box>
 
         <Box
           width="100%"
           marginTop="28px"
         >
-          <FormInput label="Password" placeholder="min. 8 characters" error={errorExample} />
+          <FormInput
+            label="Password"
+            placeholder="min. 8 characters"
+            value={password}
+            onChange={changePassword}
+          />
         </Box>
 
         <Box

@@ -19,7 +19,7 @@ export const Eye = (props: EyeProps) => {
   );
 };
 
-export interface FormaInputProps extends React.HTMLAttributes<HTMLInputElement> {
+export interface FormInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   /**
    * The content
    */
@@ -28,7 +28,7 @@ export interface FormaInputProps extends React.HTMLAttributes<HTMLInputElement> 
   type?: string;
 }
 
-export const FormInput = (props: FormaInputProps): JSX.Element => {
+export const FormInput = (props: FormInputProps): JSX.Element => {
   const {
     label,
     error,
