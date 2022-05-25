@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import * as React from 'react';
 import Link from 'next/link';
 
 import { Box } from '@/shared/components/box';
@@ -10,6 +11,33 @@ import { FormInput } from '@/features/login/components/form-input';
 import { Button } from '@/shared/components/button';
 
 const Home: NextPage = () => {
+  const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
+  const [repeatedPassword, setRepeatedPassword] = React.useState('');
+  const [emailError, setEmailError] = React.useState('');
+  const [passwordError, setPasswordError] = React.useState('');
+
+  const changeEmail = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newText = event.currentTarget.value;
+    setEmail(newText);
+
+    const condition = (newText.includes('@')) && (newText.includes('.'));
+    if (!condition) (setEmailError('Uncorrect email adress'));
+    else (setEmailError(''));
+  };
+
+  const changePassword = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newText = event.currentTarget.value;
+    setPassword(newText);
+  };
+
+  const changeRepeatedPassword = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newText = event.currentTarget.value;
+    setRepeatedPassword(newText);
+    if (newText === password) (setPasswordError(''));
+    else (setPasswordError('Passwords don’t match'));
+  };
+
   return (
     <Content>
 
@@ -55,18 +83,34 @@ const Home: NextPage = () => {
             position="relative"
           >
             <form>
-              <FormInput label="Email" placeholder="name@example.com" />
+              <FormInput
+                label="Email"
+                placeholder="name@example.com"
+                value={email}
+                onChange={changeEmail}
+                error={emailError}
+              />
 
               <Box
                 marginTop={28}
               >
-                <FormInput label="Password" />
+                <FormInput
+                  label="Password"
+                  value={password}
+                  onChange={changePassword}
+                />
               </Box>
 
               <Box
                 marginTop={28}
               >
-                <FormInput label="Repeat Password" type="password" />
+                <FormInput
+                  label="Repeat Password"
+                  type="password"
+                  value={repeatedPassword}
+                  onChange={changeRepeatedPassword}
+                  error={passwordError}
+                />
               </Box>
 
               <Button>

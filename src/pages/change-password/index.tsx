@@ -11,7 +11,18 @@ import { Footer } from '@/features/login/components/footer';
 import { FormInput } from '@/features/login/components/form-input';
 
 const Home: NextPage = () => {
+  const [email, setEmail] = React.useState('');
+  const [emailError, setEmailError] = React.useState('');
   const [isSended, setIsSended] = React.useState(false);
+
+  const changeEmail = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newText = event.currentTarget.value;
+    setEmail(newText);
+
+    const condition = (newText.includes('@')) && (newText.includes('.'));
+    if (!condition) (setEmailError('Uncorrect email adress'));
+    else (setEmailError(''));
+  };
 
   const sendLetter = (event: React.FormEvent) => {
     event.preventDefault();
@@ -62,7 +73,12 @@ const Home: NextPage = () => {
             position="relative"
           >
             <form>
-              <FormInput label="Email" />
+              <FormInput
+                label="Email"
+                value={email}
+                onChange={changeEmail}
+                error={emailError}
+              />
 
               <Button onClick={sendLetter}>
                 Send a letter
