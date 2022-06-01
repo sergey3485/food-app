@@ -1,8 +1,7 @@
 import * as React from 'react';
 import type { AppProps } from 'next/app';
 import { ExtendedNextPage } from '../shared/types/extended-next-page';
-import { GlobalStyles } from '../app/styles/global-styles';
-import { ResetStyles } from '../app/styles/reset-styles';
+import { GlobalStyles } from '../app/styles/global';
 
 type NewAppProps = AppProps & { Component: ExtendedNextPage };
 
@@ -11,7 +10,7 @@ const MyApp = ({ Component, pageProps }: NewAppProps) => {
   return (
     <>
       <GlobalStyles />
-      <ResetStyles />
+      {/* <ResetStyles /> */}
       <LayoutComponent>
         <Component {...pageProps} />
       </LayoutComponent>
