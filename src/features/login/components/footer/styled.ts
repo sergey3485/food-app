@@ -1,13 +1,11 @@
 import styled from '@emotion/styled';
 
-export const FooterRoot = styled.footer({
+export const FooterRoot = styled.div({
   display: 'flex',
   alignItems: 'flex-start',
   justifyContent: 'center',
   width: '100%',
-  position: 'absolute',
-  bottom: '5%',
-  left: 0,
+  marginBottom: '16px',
   color: '#545563',
 });
 

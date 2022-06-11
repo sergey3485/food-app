@@ -1,5 +1,5 @@
-import type { NextPage } from 'next';
 import * as React from 'react';
+import { ExtendedNextPage } from '@/shared/types/extended-next-page';
 
 import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/typography';
@@ -10,7 +10,9 @@ import { Content } from '@/features/login/components/content';
 import { Footer } from '@/features/login/components/footer';
 import { FormInput } from '@/features/login/components/form-input';
 
-const Home: NextPage = () => {
+import { ChangePasswordLayout } from '@/layout/login/change-password-layout';
+
+const Home: ExtendedNextPage = () => {
   const [email, setEmail] = React.useState('');
   const [emailError, setEmailError] = React.useState('');
   const [isSended, setIsSended] = React.useState(false);
@@ -37,7 +39,6 @@ const Home: NextPage = () => {
         justifyContent="center"
         padding="20px 15px"
         position="relative"
-        height="100vh"
         width="100%"
         flexDirection="column"
       >
@@ -107,17 +108,10 @@ const Home: NextPage = () => {
             )}
           </Box>
         </Box>
-        <Footer
-          description="Remembered the password?"
-          href="/"
-          anchor="Sign in"
-        />
       </Box>
-      <Media>
-        <div />
-      </Media>
     </Content>
   );
 };
 
+Home.Layout = ChangePasswordLayout;
 export default Home;

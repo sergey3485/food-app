@@ -1,6 +1,6 @@
-import type { NextPage } from 'next';
 import * as React from 'react';
 import Link from 'next/link';
+import { ExtendedNextPage } from '@/shared/types/extended-next-page';
 
 import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/typography';
@@ -10,7 +10,9 @@ import { Content } from '@/features/login/components/content';
 import { FormInput } from '@/features/login/components/form-input';
 import { Button } from '@/shared/components/button';
 
-const Home: NextPage = () => {
+import { RegistrationLayout } from '@/layout/login/registration-layout';
+
+const Home: ExtendedNextPage = () => {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [repeatedPassword, setRepeatedPassword] = React.useState('');
@@ -47,7 +49,6 @@ const Home: NextPage = () => {
         justifyContent="center"
         padding="20px 15px"
         position="relative"
-        height="100vh"
         width="100%"
         flexDirection="column"
       >
@@ -58,18 +59,6 @@ const Home: NextPage = () => {
           justifyContent="center"
           width="360px"
         >
-
-          <Box
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-            position="absolute"
-            top="5%"
-          >
-            <img src="/food.svg" alt="" width={48} height={16} color="black" />
-            <img src="/delivery.svg" alt="" width={80} height={20} color="#4E60FF" />
-          </Box>
 
           <Box>
             <Typography component="h2" variant="title">
@@ -119,17 +108,11 @@ const Home: NextPage = () => {
             </form>
           </Box>
         </Box>
-        <Footer
-          description="Already have an account?"
-          href="/"
-          anchor="Sign in"
-        />
       </Box>
-      <Media>
-        <div />
-      </Media>
     </Content>
   );
 };
+
+Home.Layout = RegistrationLayout;
 
 export default Home;

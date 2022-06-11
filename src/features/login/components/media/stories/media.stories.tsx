@@ -1,17 +1,13 @@
 import * as React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { Media, MediaProps } from '../media';
+import { Media } from '../media';
 
 export default {
   title: 'Components/Media',
   component: Media,
 } as Meta;
 
-const Template: Story<MediaProps> = (args) => <Media {...args} />;
+const Template: Story = () => <Media />;
 
 export const Basic = Template.bind({});
-
-Basic.args = {
-  children: 'Media',
-};

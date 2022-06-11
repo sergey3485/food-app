@@ -40,11 +40,6 @@ export const LoginForm = (): JSX.Element => {
         maxWidth="360px"
       >
 
-        <S.Logo>
-          <img src="/food.svg" alt="" width={48} height={16} color="black" />
-          <img src="/delivery.svg" alt="" width={80} height={20} color="#4E60FF" />
-        </S.Logo>
-
         <Typography component="h1" variant="title" color="black">
           Login
         </Typography>
@@ -98,11 +93,6 @@ export const LoginForm = (): JSX.Element => {
             Forgot password ?
           </S.RememberPassowrd>
         </Link>
-        <Footer
-          description="Don’t have an account?"
-          href="/registration"
-          anchor="Sign up"
-        />
       </Box>
     </S.LoginFormRoot>
   );

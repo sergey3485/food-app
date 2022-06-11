@@ -5,18 +5,7 @@ import { Reviews } from '../reviews';
 
 import * as S from './styled';
 
-export interface MediaProps {
-  /**
-   * The content
-   */
-  children: React.ReactNode;
-}
-
-export const Media = (props: MediaProps): JSX.Element => {
-  const {
-    children,
-  } = props;
-
+export const Media = (): JSX.Element => {
   return (
     <S.MediaRoot>
       <S.Media>

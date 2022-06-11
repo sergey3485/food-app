@@ -4,7 +4,6 @@ export const LoginFormRoot = styled.form({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  padding: '20px 15px',
   position: 'relative',
   height: '100vh',
   width: '100%',
@@ -35,9 +34,7 @@ export const Footer = styled.footer({
   alignItems: 'flex-start',
   justifyContent: 'center',
   width: '100%',
-  position: 'absolute',
-  bottom: '5%',
-  left: 0,
+  marginTop: 'auto',
   fontWeight: 400,
   fontSize: '14px',
   lineHeight: '20px',
@@ -50,15 +47,6 @@ export const CreateAccountLink = styled.a({
   textDecoration: 'none',
   marginLeft: '2px',
   corsor: 'pointer',
-});
-
-export const Logo = styled.div({
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  position: 'absolute',
-  top: '5%',
 });
 
 export const RememberPassowrd = styled.a({

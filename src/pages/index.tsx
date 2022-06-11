@@ -1,18 +1,19 @@
-import type { NextPage } from 'next';
+import { ExtendedNextPage } from '@/shared/types/extended-next-page';
 
 import { Media } from '@/features/login/components/media';
 import { LoginForm } from '@/features/login/components/login-form';
 import { Content } from '@/features/login/components/content';
+import { MainLayout } from '@/layout/login/main-layout';
 
-const Home: NextPage = () => {
+const Home: ExtendedNextPage = () => {
   return (
-    <Content>
-      <LoginForm />
-      <Media>
-        <div />
-      </Media>
-    </Content>
+  // <Content>
+    <LoginForm />
+  // {/* <Media /> */}
+  // {/* </Content> */}
   );
 };
+
+Home.Layout = MainLayout;
 
 export default Home;
