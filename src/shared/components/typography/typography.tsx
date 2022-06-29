@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import * as S from './styled';
 
-export interface TypographyProps {
+export interface TypographyProps extends S.TypographyType {
   /**
    * The content
    */
@@ -18,9 +18,10 @@ export const Typography = (props: TypographyProps): JSX.Element => {
     component,
     variant = 'description1',
     color = 'black',
+    ...other
   } = props;
 
   return (
-    <S.TypographyRoot as={component} variant={variant} color={color}>{children}</S.TypographyRoot>
+    <S.TypographyRoot as={component} variant={variant} color={color} {...other}>{children}</S.TypographyRoot>
   );
 };

@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { ChangePasswordLayout, ChangePasswordLayoutProps } from '../change-password-layout';
 
 export default {
-  title: 'Components/MainLayout',
+  title: 'layouts/login/change-password-layout',
   component: ChangePasswordLayout,
 } as Meta;
 

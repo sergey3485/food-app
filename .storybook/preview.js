@@ -1,5 +1,6 @@
-import { GlobalStyles } from '../src/app/styles/global-styles';
-import { ResetStyles } from '../src/app/styles/reset-styles';
+// import { GlobalStyles } from '../src/app/styles/global-styles';
+// import { ResetStyles } from '../src/app/styles/reset-styles';
+import { GlobalStyles } from '@/app/styles/global';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -15,7 +16,6 @@ export const decorators = [
   (Story, context) => {
     return (
       <>
-        <ResetStyles />
         <GlobalStyles />
 
         <Story />

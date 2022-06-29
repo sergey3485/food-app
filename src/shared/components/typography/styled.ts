@@ -1,5 +1,16 @@
 import styled from '@emotion/styled';
 
+import {
+  color,
+  ColorProps,
+  typography,
+  TypographyProps,
+} from 'styled-system';
+
+export type TypographyType =
+  & ColorProps
+  & TypographyProps;
+
 const variants: Record<string, React.CSSProperties> = {
   cost: {
     fontWeight: 800,
@@ -35,12 +46,16 @@ const variants: Record<string, React.CSSProperties> = {
   },
 };
 
-export interface TypographyProps {
+export interface TypographyElementProps {
   variant: 'cost' | 'description1' | 'title' | 'mediaTitle' | 'voits' | 'description2';
   color: string;
 }
 
-export const TypographyRoot = styled.div((props: TypographyProps) => ({
+export const Typography = styled.div((props: TypographyElementProps) => ({
   ...variants[props.variant],
   color: props.color,
 }));
+
+export const TypographyRoot = styled(Typography)<TypographyType>(
+  typography,
+);
