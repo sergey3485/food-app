@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { RegistrationLayout, RegistrationLayoutProps } from '../registration-layout';
 
 export default {
-  title: 'Components/MainLayout',
+  title: 'layouts/login/registration-layout',
   component: RegistrationLayout,
 } as Meta;
 

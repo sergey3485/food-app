@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { Footer, FooterProps } from '../footer';
 
 export default {
-  title: 'Components/Footer',
+  title: 'features/login/components/footer',
   component: Footer,
 } as Meta;
 

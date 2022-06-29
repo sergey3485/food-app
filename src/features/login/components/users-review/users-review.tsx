@@ -4,7 +4,7 @@ import { RiThumbUpFill, RiThumbDownLine, RiStarFill } from 'react-icons/ri';
 
 import { Box } from '@/shared/components/box';
 
-import { reviewsUsers, User } from '../constants/users';
+import { reviewsUsers, User } from '@/features/login/constants/users';
 
 import * as S from './styled';
 

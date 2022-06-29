@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Story, Meta } from '@storybook/react';
-import { User, reviewsUsers } from '../../constants/users';
+import { User, reviewsUsers } from '../../../constants/users';
 
 import { UsersReview, UserReview } from '../users-review';
 
 export default {
-  title: 'feature/food/components/UserReview',
+  title: 'features/login/components/user-review',
   component: UsersReview,
 } as Meta;
 

@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { ReviewsHeader } from '../reviews-header';
 
 export default {
-  title: 'features/food/components/ReviewsHeader',
+  title: 'features/login/components/reviews-header',
   component: ReviewsHeader,
 } as Meta;
 

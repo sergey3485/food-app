@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { NagitiSet } from '../nagiti-set';
 
 export default {
-  title: 'features/food/components/NagitiSet',
+  title: 'features/login/components/nagiti-set',
   component: NagitiSet,
 } as Meta;
 

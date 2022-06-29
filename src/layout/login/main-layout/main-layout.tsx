@@ -24,7 +24,6 @@ export const MainLayout = (props: MainLayoutProps): JSX.Element => {
           <Box
             display="flex"
             flexDirection="column"
-            alignItems="center"
             justifyContent="center"
           >
             <img src="/food.svg" alt="" width={48} height={16} color="black" />

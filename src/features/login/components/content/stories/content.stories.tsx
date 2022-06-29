@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { Content, ConTentPaProps } from '../content';
 
 export default {
-  title: 'Components/Content',
+  title: 'features/login/components/content',
   component: Content,
 } as Meta;
 

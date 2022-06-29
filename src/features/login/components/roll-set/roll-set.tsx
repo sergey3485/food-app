@@ -5,9 +5,8 @@ import { RiAddLine } from 'react-icons/ri';
 import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/typography';
 
-import { MediaCard } from '../media-card';
-
 import * as S from './styled';
+import { MediaCard } from '@/features/login/components/media-card';
 
 export const RollSet = (): JSX.Element => {
   return (

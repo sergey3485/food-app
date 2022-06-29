@@ -2,10 +2,9 @@ import * as React from 'react';
 import Link from 'next/link';
 import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/typography';
-import { CheckBox } from '../checkbox';
+import { CheckBox } from '@/features/login/components/checkbox';
 
-import { FormInput } from '../form-input';
-import { Footer } from '../footer';
+import { FormInput } from '@/features/login/components/form-input';
 
 import * as S from './styled';
 

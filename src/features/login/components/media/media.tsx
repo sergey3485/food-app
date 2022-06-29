@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { NagitiSet } from '../nagiti-set';
-import { RollSet } from '../roll-set';
-import { Reviews } from '../reviews';
+import { NagitiSet } from '@/features/login/components/nagiti-set';
+import { RollSet } from '@/features/login/components/roll-set';
+import { Reviews } from '@/features/login/components/reviews';
 
 import * as S from './styled';
 

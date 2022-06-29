@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { RollSet } from '../roll-set';
 
 export default {
-  title: 'Components/RollSet',
+  title: 'featuers/login/components/roll-set',
   component: RollSet,
 } as Meta;
 

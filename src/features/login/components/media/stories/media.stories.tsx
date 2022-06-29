@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { Media } from '../media';
 
 export default {
-  title: 'Components/Media',
+  title: 'features/login/components/media',
   component: Media,
 } as Meta;
 

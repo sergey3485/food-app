@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { CheckBox, CheckboxProps } from '../check-box';
 
 export default {
-  title: 'features/food/components/CheckBox',
+  title: 'features/login/components/checkbox',
   component: CheckBox,
 } as Meta;
 

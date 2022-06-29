@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { LoginForm } from '../login-form';
 
 export default {
-  title: 'features/food/components/LoginForma',
+  title: 'features/login/components/login-Form',
   component: LoginForm,
 } as Meta;
 

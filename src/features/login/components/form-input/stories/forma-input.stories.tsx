@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { FormInput, FormInputProps } from '../form-input';
 
 export default {
-  title: 'features/food/components/FormaInput',
+  title: 'features/login/components/form-input',
   component: FormInput,
 } as Meta;
 

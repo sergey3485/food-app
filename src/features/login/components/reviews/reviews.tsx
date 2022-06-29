@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { RiArrowDownSLine } from 'react-icons/ri';
 import { Box } from '@/shared/components/box';
-import { ReviewsHeader } from '../reviews-header';
-import { UsersReview } from '../users-review';
+import { ReviewsHeader } from '@/features/login/components/reviews-header';
+import { UsersReview } from '@/features/login/components/users-review';
 
 import * as S from './styled';
 

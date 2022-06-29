@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { MediaCard, MediacardProps } from '../media-card';
 
 export default {
-  title: 'Components/Mediacard',
+  title: 'features/login/components/media-card',
   component: MediaCard,
 } as Meta;
 
