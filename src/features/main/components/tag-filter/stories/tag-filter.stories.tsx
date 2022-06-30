@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { TagFilter, TagFilterProps } from '../tag-filter';
 
 export default {
-  title: 'Components/TagFilter',
+  title: 'features/main/components/tag-filter',
   component: TagFilter,
 } as Meta;
 

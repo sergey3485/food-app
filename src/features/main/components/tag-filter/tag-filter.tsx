@@ -12,16 +12,18 @@ import * as S from './styled';
 export interface TagFilterProps {
   tag: 'sushi' | 'burger' | 'pizza' | 'bbq' | 'desserts' | 'vegan';
   active: boolean;
+  onChange: () => void;
 }
 
 export const TagFilter = (props: TagFilterProps): JSX.Element => {
   const {
     tag,
     active,
+    onChange,
   } = props;
 
   return (
-    <S.TagFilterRoot active={active}>
+    <S.TagFilterRoot active={active} onClick={onChange}>
       <Box
         display="flex"
         alignItems="center"
