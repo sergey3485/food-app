@@ -3,7 +3,7 @@ import Burger from '../../../../public/discountBurger.png';
 import Muffin from '../../../../public/discountMuffin.png';
 
 export interface Announcment {
-  imgPath: string | StaticImageData;
+  imgPath: string;
   type: string;
   announcement: string;
   category: string;
@@ -13,7 +13,7 @@ export interface Announcment {
 
 export const announcments: Announcment[] = [
   {
-    imgPath: Burger,
+    imgPath: './discountBurger.png',
     type: 'Big Burgers',
     announcement: '50% off',
     category: 'fooddies',
@@ -21,7 +21,7 @@ export const announcments: Announcment[] = [
     color: '#FD6D22',
   },
   {
-    imgPath: Muffin,
+    imgPath: './discountMuffin.png',
     type: 'All Dessetrs',
     announcement: '20% off',
     category: 'deserty',
