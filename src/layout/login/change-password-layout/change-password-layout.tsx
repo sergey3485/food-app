@@ -24,7 +24,6 @@ export const ChangePasswordLayout = (props: ChangePasswordLayoutProps): JSX.Elem
           <Box
             display="flex"
             flexDirection="column"
-            alignItems="center"
             justifyContent="center"
           >
             <img src="/food.svg" alt="" width={48} height={16} color="black" />

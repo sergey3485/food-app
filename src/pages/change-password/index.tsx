@@ -37,7 +37,6 @@ const Home: ExtendedNextPage = () => {
         display="flex"
         alignItems="center"
         justifyContent="center"
-        padding="20px 15px"
         position="relative"
         width="100%"
         flexDirection="column"
@@ -49,18 +48,6 @@ const Home: ExtendedNextPage = () => {
           justifyContent="center"
           width="360px"
         >
-
-          <Box
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-            position="absolute"
-            top="5%"
-          >
-            <img src="/food.svg" alt="" width={48} height={16} color="black" />
-            <img src="/delivery.svg" alt="" width={80} height={20} color="#4E60FF" />
-          </Box>
 
           <Box>
             <Typography component="h2" variant="mediaTitle">

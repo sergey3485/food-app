@@ -47,7 +47,6 @@ const Home: ExtendedNextPage = () => {
         display="flex"
         alignItems="center"
         justifyContent="center"
-        padding="20px 15px"
         position="relative"
         width="100%"
         flexDirection="column"

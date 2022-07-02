@@ -4,7 +4,7 @@ import { Story, Meta } from '@storybook/react';
 import { MainLayout, MainLayoutProps } from '../main-layout';
 
 export default {
-  title: 'Components/Mainlayout',
+  title: 'features/main/layouts/mainlayout',
   component: MainLayout,
 } as Meta;
 
