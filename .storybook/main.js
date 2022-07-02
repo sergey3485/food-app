@@ -27,6 +27,7 @@ module.exports = {
           '@/features': path.resolve(__dirname, '../src/features'),
           '@/layout': path.resolve(__dirname, '../src/layout'),
           '@/shared': path.resolve(__dirname, '../src/shared'),
+          '@/public': path.resolve(__dirname, '../public'),
         },
       },
     };

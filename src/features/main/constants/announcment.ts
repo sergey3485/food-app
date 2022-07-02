@@ -1,6 +1,5 @@
-import { StaticImageData } from 'next/image';
-import Burger from '../../../../public/discountBurger.png';
-import Muffin from '../../../../public/discountMuffin.png';
+import Burger from '@/public/discountBurger.png';
+import Muffin from '@/public/discountMuffin.png';
 
 export interface Announcment {
   imgPath: string;
@@ -13,7 +12,7 @@ export interface Announcment {
 
 export const announcments: Announcment[] = [
   {
-    imgPath: './discountBurger.png',
+    imgPath: Burger as unknown as string,
     type: 'Big Burgers',
     announcement: '50% off',
     category: 'fooddies',
@@ -21,7 +20,7 @@ export const announcments: Announcment[] = [
     color: '#FD6D22',
   },
   {
-    imgPath: './discountMuffin.png',
+    imgPath: Muffin as unknown as string,
     type: 'All Dessetrs',
     announcement: '20% off',
     category: 'deserty',

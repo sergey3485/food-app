@@ -1,19 +1,13 @@
 import { ExtendedNextPage } from '@/shared/types/extended-next-page';
-
-import { Media } from '@/features/login/components/media';
-import { LoginForm } from '@/features/login/components/login-form';
-import { Content } from '@/features/login/components/content';
-import { MainLayout } from '@/layout/login/main-layout';
+import { AnnouncmentCard } from '@/features/main/components/announcment-card';
+import { announcments } from '@/features/main/constants/announcment';
 
 const Home: ExtendedNextPage = () => {
   return (
-  // <Content>
-    <LoginForm />
-  // {/* <Media /> */}
-  // {/* </Content> */}
+    <AnnouncmentCard announcment={announcments[0]} />
   );
 };
 
-Home.Layout = MainLayout;
+// Home.Layout = MainLayout;
 
 export default Home;
