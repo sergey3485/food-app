@@ -23,7 +23,7 @@ export const Wrapper = styled.div<{ error: boolean, variant: 'auth' | 'main' }>(
   borderColor: props.error ? '#C7C8D2' : 'red',
   alignItems: 'center',
   justifyContent: 'center',
-  height: '48px',
+  height: '40px',
 }));
 
 export const InputRoot = styled.div({
@@ -34,7 +34,7 @@ export const InputRoot = styled.div({
 export const Input = styled.input({
   outline: 'none',
   border: 'none',
-  padding: 'none',
+  padding: 0,
   width: '100%',
   fontWeight: 400,
   fontSize: '14px',

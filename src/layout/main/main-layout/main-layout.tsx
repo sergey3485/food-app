@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-import { RiShoppingBag3Line } from 'react-icons/ri';
+import { Header } from '@/features/main/components/header';
 
 import { Box } from '@/shared/components/box';
 
 export interface MainLayoutProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export const MainLayout = (props: MainLayoutProps) => {
@@ -15,25 +15,31 @@ export const MainLayout = (props: MainLayoutProps) => {
       display="flex"
       flexDirection="column"
       width="100%"
+      alignItems="center"
     >
       <Box
         display="flex"
-        width="100%"
+        width="1110px"
         alignItems="center"
-        justifyContent="center"
+        padding="16px 0px"
       >
-        <Box
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <img src="/food.svg" alt="" width={48} height={16} color="black" />
-          <img src="/delivery.svg" alt="" width={80} height={20} color="#4E60FF" />
-        </Box>
-        {}
+
+        <Header orders={4} avatar="/avatar.png" />
       </Box>
-      {}
+
+      <Box
+        width="100%"
+        border="1px solid #EDEEF2"
+      />
+
+      <Box
+        marginTop="24px"
+        display="flex"
+        width="1110px"
+      >
+        {children}
+      </Box>
+
     </Box>
   );
 };

@@ -5,7 +5,7 @@ import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/typography';
 import { IconButton } from '@/shared/components/icon-button/icon-button';
 import { Input } from '@/shared/components/Input';
-import { CheckBox } from '@/features/authorization/components/checkbox';
+import { CheckBox } from '@/shared/components/checkbox';
 
 import * as S from './styled';
 

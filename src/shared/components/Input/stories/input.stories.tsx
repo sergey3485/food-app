@@ -16,6 +16,5 @@ Basic.args = {
   label: 'Email',
   error: true,
   errorText: 'Uncorrect email adress',
-  addition: 'asd2',
   variant: 'auth',
 };
