@@ -79,7 +79,7 @@ const Home: ExtendedNextPage = () => {
       <Box
         display="grid"
         gridGap="30px"
-        gridTemplateColumns="1fr 1fr 1fr"
+        gridTemplateColumns="0fr 0fr 1fr"
       >
         {restaurantsExample.map((restaurant) => (
           <RestaurantCard
