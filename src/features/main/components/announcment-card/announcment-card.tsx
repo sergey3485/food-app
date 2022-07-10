@@ -23,7 +23,6 @@ export const AnnouncmentCard = (props: AnnouncmentCardProps): JSX.Element => {
     <S.AnnouncmentCardRoot backgroundColor={announcment.backgroundColor}>
       <Box
         display="flex"
-        flex={1}
       >
         <img alt="" src={announcment.imgPath} width={290} height={188} />
       </Box>
@@ -36,7 +35,11 @@ export const AnnouncmentCard = (props: AnnouncmentCardProps): JSX.Element => {
         padding="24px 24px 16px 16px"
       >
         <Box>
-          <Typography component="span" fontSize="20px" fontWeight={600}>
+          <Typography
+            component="span"
+            fontSize="20px"
+            fontWeight={600}
+          >
             {announcment.type}
           </Typography>
         </Box>
@@ -44,7 +47,13 @@ export const AnnouncmentCard = (props: AnnouncmentCardProps): JSX.Element => {
         <Box
           marginTop="8px"
         >
-          <Typography component="span" color={announcment.color} fontSize="40px" fontWeight={800} lineHeight="52px">
+          <Typography
+            component="span"
+            color={announcment.color}
+            fontSize="40px"
+            fontWeight={800}
+            lineHeight="52px"
+          >
             {announcment.announcement.toUpperCase()}
           </Typography>
         </Box>

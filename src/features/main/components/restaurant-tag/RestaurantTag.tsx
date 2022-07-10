@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { tags } from '@/features/main/constants/tags';
+import { tags, TagsLabel } from '@/features/main/constants/tags';
 
 import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/typography';
@@ -13,12 +13,14 @@ export interface RestaurantTagProps {
   /**
    * The content
    */
-  tag: 'sushi' | 'burger' | 'pizza' | 'bbq' | 'desserts' | 'vegan';
+  tag: TagsLabel;
+  imgPath: string;
 }
 
 export const RestaurantTag = (props: RestaurantTagProps): JSX.Element => {
   const {
     tag,
+    imgPath,
   } = props;
 
   return (
@@ -29,8 +31,9 @@ export const RestaurantTag = (props: RestaurantTagProps): JSX.Element => {
         justifyContent="center"
         width="16px"
         height="16px"
+        marginRight="8px"
       >
-        <img alt="" src={tags[tag]} />
+        <img alt="" src={imgPath} />
       </Box>
       <Typography component="span" color="#545563" fontWeight={600} fontSize="12px" lineHeight={1}>
         {firstToUpper(tag)}

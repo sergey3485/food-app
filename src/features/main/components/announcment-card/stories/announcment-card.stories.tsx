@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { announcments } from '@/features/main/constants/announcment';
+import { announcmentsStorybook } from '@/features/main/constants/announcment';
 
 import { AnnouncmentCard, AnnouncmentCardProps } from '../announcment-card';
 
@@ -16,9 +16,9 @@ export const Burger = Template.bind({});
 export const Muffin = Template.bind({});
 
 Burger.args = {
-  announcment: announcments[0],
+  announcment: announcmentsStorybook[0],
 };
 
 Muffin.args = {
-  announcment: announcments[1],
+  announcment: announcmentsStorybook[1],
 };

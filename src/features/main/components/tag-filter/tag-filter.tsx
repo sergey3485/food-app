@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { tags } from '@/features/main/constants/tags';
+import { tags, TagsLabel } from '@/features/main/constants/tags';
 
 import { Box } from '@/shared/components/box';
 import { Typography } from '@/shared/components/typography';
@@ -10,7 +10,8 @@ import { firstToUpper } from '@/shared/functions/text/basic';
 import * as S from './styled';
 
 export interface TagFilterProps {
-  tag: 'sushi' | 'burger' | 'pizza' | 'bbq' | 'desserts' | 'vegan';
+  tag: TagsLabel;
+  imgPath: string;
   active: boolean;
   onChange: () => void;
 }
@@ -18,6 +19,7 @@ export interface TagFilterProps {
 export const TagFilter = (props: TagFilterProps): JSX.Element => {
   const {
     tag,
+    imgPath,
     active,
     onChange,
   } = props;
@@ -32,7 +34,7 @@ export const TagFilter = (props: TagFilterProps): JSX.Element => {
         height="24px"
         marginBottom="12px"
       >
-        <img alt="" src={tags[tag]} width={24} height={24} />
+        <img alt="" src={imgPath} width={24} height={24} />
       </Box>
       <Typography component="span" color={active ? '#4E60FF' : '#545563'}>
         {firstToUpper(tag)}

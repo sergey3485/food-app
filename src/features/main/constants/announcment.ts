@@ -10,7 +10,7 @@ export interface Announcment {
   color: string;
 }
 
-export const announcments: Announcment[] = [
+export const announcmentsStorybook: Announcment[] = [
   {
     imgPath: Burger as unknown as string,
     type: 'Big Burgers',
@@ -21,6 +21,25 @@ export const announcments: Announcment[] = [
   },
   {
     imgPath: Muffin as unknown as string,
+    type: 'All Dessetrs',
+    announcement: '20% off',
+    category: 'deserty',
+    backgroundColor: '#F3F4FF',
+    color: '#4E60FF',
+  },
+];
+
+export const announcments: Announcment[] = [
+  {
+    imgPath: '/discountBurger.png',
+    type: 'Big Burgers',
+    announcement: '50% off',
+    category: 'fooddies',
+    backgroundColor: '#FFF3ED',
+    color: '#FD6D22',
+  },
+  {
+    imgPath: '/discountMuffin.png',
     type: 'All Dessetrs',
     announcement: '20% off',
     category: 'deserty',
