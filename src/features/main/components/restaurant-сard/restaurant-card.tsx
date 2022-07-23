@@ -66,25 +66,25 @@ export const RestaurantCard = (props: RestaurantCardProps): JSX.Element => {
             position="relative"
           >
             {(orders > 0) && (
-            <Box
-              bottom={10}
-              left={12}
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              width="16px"
-              height="16px"
-              border="2px solid"
-              borderColor="white"
-              position="absolute"
-              backgroundColor="#4E60FF"
-              color="white"
-              borderRadius="6px"
-            >
-              <Typography component="span" color="white" variant="voits">
-                {orders}
-              </Typography>
-            </Box>
+              <Box
+                bottom={10}
+                left={12}
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                width="16px"
+                height="16px"
+                border="2px solid"
+                borderColor="white"
+                position="absolute"
+                backgroundColor="#4E60FF"
+                color="white"
+                borderRadius="6px"
+              >
+                <Typography component="span" color="white" variant="voits">
+                  {orders}
+                </Typography>
+              </Box>
             )}
             <RiShoppingBag3Line size={20} color={orders > 0 ? '#4E60FF' : '#C7C8D2'} />
           </Box>
@@ -140,7 +140,7 @@ export const RestaurantCard = (props: RestaurantCardProps): JSX.Element => {
             <Box
               marginRight="8px"
             >
-              <RestaurantTag tag={tag} />
+              <RestaurantTag tag={tag} imgPath={`/${tag}Logo.svg`} />
             </Box>
           ))}
         </Box>

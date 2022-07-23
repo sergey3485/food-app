@@ -1,12 +1,12 @@
-export type Tag = 'sushi' | 'burger' | 'pizza' | 'bbq' | 'desserts' | 'vegan';
+export type Tag = 'sushi' | 'burger' | 'pizza' | 'BBQ' | 'desserts' | 'vegan';
 
 export interface RestaurantInfo {
-  name: string,
-  tags: Tag[],
-  delivaryTime: string,
-  minBill: number,
-  img: string,
-  featured: boolean,
+  name: string;
+  tags: Tag[];
+  delivaryTime: string;
+  minBill: number;
+  img: string;
+  featured: boolean;
 }
 
 export const restaurantsExample: RestaurantInfo[] = [

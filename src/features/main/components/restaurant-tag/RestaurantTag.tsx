@@ -33,7 +33,7 @@ export const RestaurantTag = (props: RestaurantTagProps): JSX.Element => {
         height="16px"
         marginRight="8px"
       >
-        <img alt="" src={imgPath} />
+        <img alt="" src={imgPath} height="16px" width="16px" />
       </Box>
       <Typography component="span" color="#545563" fontWeight={600} fontSize="12px" lineHeight={1}>
         {firstToUpper(tag)}
