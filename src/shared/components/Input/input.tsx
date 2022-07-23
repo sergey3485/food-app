@@ -33,31 +33,31 @@ export const Input = (props: InputProps): JSX.Element => {
   return (
     <S.InputRoot>
       {label && (
-      <Box
-        marginBottom="4px"
-      >
-        <Typography
-          color="#545563"
-          component="span"
-          fontSize="12px"
-          lineHeight="16px"
-          fontWeight={600}
+        <Box
+          marginBottom="4px"
         >
-          {label}
-        </Typography>
-      </Box>
+          <Typography
+            color="#545563"
+            component="span"
+            fontSize="12px"
+            lineHeight="16px"
+            fontWeight={600}
+          >
+            {label}
+          </Typography>
+        </Box>
       )}
       <S.Wrapper error={error} variant={variant}>
         <S.Input type={type} placeholder={placeholder} {...other} />
         {addition && (
-        <Box
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          paddingLeft="8px"
-        >
-          {addition}
-        </Box>
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            paddingLeft="8px"
+          >
+            {addition}
+          </Box>
         )}
       </S.Wrapper>
 

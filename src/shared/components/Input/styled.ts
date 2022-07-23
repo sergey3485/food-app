@@ -17,7 +17,7 @@ const variants: Record<string, React.CSSProperties> = {
   },
 };
 
-export const Wrapper = styled.div<{ error: boolean, variant: 'auth' | 'main' }>((props) => ({
+export const Wrapper = styled.div<{ error: boolean; variant: 'auth' | 'main' }>((props) => ({
   ...variants[props.variant],
   display: 'flex',
   borderColor: props.error ? '#C7C8D2' : 'red',
