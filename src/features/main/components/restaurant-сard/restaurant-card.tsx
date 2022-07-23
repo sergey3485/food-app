@@ -8,7 +8,7 @@ import { Typography } from '@/shared/components/typography';
 import { RestaurantTag } from '@/features/main/components/restaurant-tag';
 
 import { RestaurantInfo } from '@/features/main/constants/restaurants';
-import { tags } from '@/features/main/constants/tags';
+import { firstToUpper } from '@/shared/functions/text/basic';
 
 import * as S from './styled';
 
@@ -140,7 +140,7 @@ export const RestaurantCard = (props: RestaurantCardProps): JSX.Element => {
             <Box
               marginRight="8px"
             >
-              <RestaurantTag tag={tag} imgPath={`/${tag}Logo.svg`} />
+              <RestaurantTag tag={tag} imgPath={`/${firstToUpper(tag)}Logo.svg`} />
             </Box>
           ))}
         </Box>
